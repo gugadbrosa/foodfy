@@ -12,7 +12,7 @@
 
 ## 📜 About
 
-The **Foodfy** project is a recipe website developed on **Rocketseat's Launchbase bootcamp**, with the aim of putting into practice all the content presented so far (HTML, CSS, JavaScript).
+The **Foodfy** project is a recipe website developed on **Rocketseat's Launchbase bootcamp**, with the aim of putting into practice all the content presented so far.
 
 <br>
 
