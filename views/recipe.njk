@@ -10,7 +10,7 @@
 
     <div class='recipe-subtitle'>
         <h2>Ingredientes</h2> 
-        <h4 class='hide-ingredients'>Esconder</h4> 
+        <h4 class='hide-ingredients active'>Esconder</h4> 
         <h4 class='show-ingredients hidden'>Mostrar</h4>
     </div>
 
@@ -24,26 +24,26 @@
 
     <div class="recipe-subtitle">
         <h2>Modo de Preparo</h2> 
-        <h4 class='hide-preparation'>Esconder</h4> 
+        <h4 class='hide-preparation active'>Esconder</h4> 
         <h4 class="show-preparation hidden">Mostrar</h4>
     </div>
 
     <div class='preparation'>
         <ul>
-        {%for preparation in item.preparation %}
-            <li>{{preparation}}</li>
-        {%endfor%}
+            {%for preparation in item.preparation %}
+                <li>{{preparation}}</li>
+            {%endfor%}
         </ul>
     </div>
 
     <div class="recipe-subtitle">
         <h2>Informações Adicionais</h2> 
-        <h4 class='hide-information'>Esconder</h4> 
+        <h4 class='hide-information active'>Esconder</h4> 
         <h4 class="show-information hidden">Mostrar</h4>
     </div>
 
     <div class='information'>
-        <p>{{item.information}}</p>
+        <p>{{item.information | striptags(true) | escape | nl2br}}</p>
     </div>
 
 {%endblock%}

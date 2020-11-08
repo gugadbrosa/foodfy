@@ -117,6 +117,10 @@ header {
 
 /* =============== ABOUT ============== */
 
+.about {
+    margin-top: 50px;
+}
+
 .about h2{
     font-size: 24px;
     color: #111111;
@@ -141,9 +145,8 @@ header {
     margin: 50px 0;
 }
 
-.recipe-top 
-h1,
-h3 {
+.recipe-top h1,
+.recipe-top h3 {
     text-align: center;
 }
 
@@ -162,13 +165,17 @@ h3 {
 
 .recipe-subtitle h2 {
     font-size: 24px;
-    display: inline-block;
+    display: inline;
 }
 
 .recipe-subtitle h4 {
     font-size: 12px;
     color: #999999;
-    display: inline-block;
+    text-transform: uppercase;
+}
+
+.recipe-subtitle h4:hover {
+    cursor: pointer;
 }
 
 ul {
@@ -192,5 +199,8 @@ ul li {
 .hidden {
     visibility: hidden;
     display: none;
-    overflow: hidden;
+}
+
+.active {
+    display: inline-block;
 }

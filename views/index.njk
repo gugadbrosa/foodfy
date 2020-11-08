@@ -20,17 +20,19 @@
                  
             <section class="cards">
                 {% for recipe in recipes %}
-                <div class="card">
-                    <div class="card__image-container" >
-                        <img src="{{recipe.image}}" alt="{{recipe.title}}">
-                    </div>
-                    <div class="card__content">
-                        <h3>{{recipe.title}}</h3>
-                    </div>
-                    <div class="card__author">
-                        <p>por {{recipe.author}}</p>
-                    </div>
-                </div>
+                    {% if loop.index <= 6 %}
+                        <div class="card">
+                            <div class="card__image-container" >
+                                <img src="{{recipe.image}}" alt="{{recipe.title}}">
+                            </div>
+                            <div class="card__content">
+                                <h3>{{recipe.title}}</h3>
+                            </div>
+                            <div class="card__author">
+                                <p>por {{recipe.author}}</p>
+                            </div>
+                        </div>
+                    {% endif %}    
                 {%endfor%}
             </section>
 

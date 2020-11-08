@@ -13,13 +13,17 @@ const information = document.querySelector(".information");
 function hide(button1, button2, thing) {
     button1.addEventListener("click", function(){
         button1.classList.add("hidden");
+        button1.classList.remove("active");
+        button2.classList.add("active");
         button2.classList.remove("hidden");
         thing.classList.add("hidden");
     })
 
     button2.addEventListener("click", function(){
         button2.classList.add("hidden");
+        button2.classList.remove("active");
         button1.classList.remove("hidden");
+        button1.classList.add("active");
         thing.classList.remove("hidden");
     })
 }
